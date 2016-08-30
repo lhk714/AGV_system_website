@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/slider.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css'>
+    <script src="js/jquery-1.7.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/tms-0.4.1.js"></script>
+    <script>
+		$(document).ready(function(){
+			$('.slider')._TMS({
+				show:0,
+				pauseOnHover:true,
+				prevBu:'.prev',
+				nextBu:'.next',
+				playBu:false,
+				duration:500,
+				preset:'fade',
+				pagination:true,//'.pagination',true,'<ul></ul>'
+				pagNums:false,
+				slideshow:8000,
+				numStatus:false,
+				banners:'fromBottom',// fromLeft, fromRight, fromTop, fromBottom
+				waitBannerAnimation:false,
+				progressBar:false
+			})
+			
+	 	}) 
+		$(function(){
+		  if($(window).width() <= 1066)
+			{
+			  $("#slider .prev").css("left", "55px")
+			  $("#slider .next").css("right", "55px")
+			}
+		})
+	</script>
+	<!--[if lt IE 8]>
+           <![endif]-->
+    <!--[if lt IE 9]>
+    	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+   		<script type="text/javascript" src="js/html5.js"></script>
+    	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+	<![endif]-->
+	<style type="text/css">
+	.auto-style1 {
+		font-size: 25px;
+		color: #FFFFFF;
+		letter-spacing: -1px;
+	}
+	.auto-style2 {
+	margin-top: 0;
+}
+	</style>
+</head>
+<body>
+<div class="bg">
+   <header>
+       <div class="main wrap">
+       		<h1><a href="index.html">
+			<img src="IMG/Logo.jpg" alt="" height="78" width="526" align="left" class="auto-style2"></a></h1> 
+            <p>EIE Innovative Projects<span lang="zh-cn">
+			<span class="auto-style1">14N04</span></span></p>
+       </div>
+       <nav>  
+          <ul class="menu">
+              <li class="current"><a href="index.html" class="home">
+			  <img src="images/home.jpg" alt=""></a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="Gantt chart.html">Gantt Chart</a></li>
+              <li><a href="Cost Market.html">Cost & Market </a></li>
+              <li><a href="Design Manufacturing.html">Design & Manufacturing</a></li>
+              <li><a href="Gallery.html">Gallery</a></li>
+              <li><a href="Link sourse.html">Links & Resources</a></li>
+              
+          </ul>
+          <div class="clear"></div>
+        </nav>
+   </header>
+   <div id="slider">
+       <div class="slider-block">
+          <div class="slider">
+              <ul class="items">
+                  <li>
+				  <img src="IMG/header_agv_types.jpg" alt="" /><div class="banner"><div><span>Hybrid AGV</span><strong>Hybrid Automated Guided Vehicle</strong><p>Hybrid AGVs move goods in and out of areas. Designed to quickly switch between manual and automated modes, Hybrid AGVs increase the productivity of warehouses and distribution centers while keeping costs under control.</p></div></div></li>
+                  <li>
+				  <img src="IMG/flv-series1.jpg"alt="" /><div class="banner"><div><span>FLV</span><strong>Fork Lift Vehicle AGV</strong><p>The FLV series include forklift AGVs that are able to automatically pick up and deliver pallets, containers, rolls, carts and many other conveyable loads. Automated guided vehicles with forks are the most common type of AGVs because they are so versatile. They can pick and drop load from floor level, racks, stands and driven conveyors.</p></div></div></li>
+                  <li>
+				  <img src="IMG/ltv-series1.jpg" alt="" /><div class="banner"><div><span>LTV</span><strong>Load Transfer Vehicle AGV</strong><p>The LTV is designed to move loads at high throughput between workstations in a production environment or between the warehouse and production. These automated guided vehicles carry one, two or four loads at a time and interface with conveyors, stands, end-of-line equipment and automatic warehouse equipment.</p></div></div></li>
+                  <li>
+				  <img src="IMG/tugger-series1.jpg" alt="" /><div class="banner"><div><span>tugger AGV</span><strong>Productive tugger AGV</strong><p>Tugger AGVs pull non-driven carts that are charged with loads, either manually or automatically with an actuated hitch. These type of automated guided vehicles are the most productive AGVs as they are capable of carrying more goods than any other type. This allows for a considerable increase in capacity and efficiency, especially compared to traditional forklift trucks.</p></div></div></li>
+                  <li>
+				  <img src="IMG/packmobile1.jpg" alt="" /><div class="banner"><div><span>General AGV</span><strong>AGVs for automatic delivery of mail and packages</strong><p>Mailmobiles are light-duty automated guided vehicles that automatically deliver mail from the central mail center to various workstations in single and multi-storey office buildings. Packmobiles are flexible and affordable automated guided vehicles for transport and delivery for blood specimens, prescription optics, packages, boxes, and parts.</p></div></div></li>
+                  <li>
+				  <img src="IMG/vna-series1.jpg" alt="" /><div class="banner"><div><span>VNA</span><strong>Very narrow aisle AGV</strong><p>Very narrow aisle AGVs are used in high-bay racking aisles. Very narrow aisle trucks are commonly installed in distribution and warehousing applications. Because they are able to drive in narrow aisles they can easily replace traditional VNA trucks operated by man.</p></div></div></li>
+                  <li>
+				  <img src="IMG/clamp-series1.jpg"alt="" /><div class="banner"><div><span>Clamp AGV</span><strong>Clamp AGVs for handling of rolls and unpalletized loads</strong><p>Egemin Automation designs produces automatic guided vehicles equipped with a clamp handling device instead of forks to handle unpalletized loads, boxes, rolls. These loads can be handled, lifted, transported with the same delicacy and flexibility as with forks.</p></div></div></li>
+              </ul>
+          </div>
+          <a href="#" class="prev"></a>
+          <a href="#" class="next"></a>
+        </div>
+    </div>
+   <!--==============================content================================-->
+   <section id="content"><div class="ic"></div>
+      <div class="block-1 box-1">
+        <div>
+            <img src="IMG/business-efficiency-improvment-strategies-300x199.jpg"alt="">
+            <p class="text-1">Operation <strong>Efficiency</strong></p>
+                 </div>
+        <div>
+            <img src="IMG/application-performance.jpg"alt="">
+            <p class="text-1">Preformance <strong>Assurance</strong></p>           
+        </div>
+        <div>
+            <img src="IMG/robot_painting_start.jpg" alt="">
+            <p class="text-1">Robust <strong>Design</strong></p>
+                                </div>
+        <div class="last">
+            <img src="IMG/aluminum-tonneau-covers_durable-icon.jpg" alt="">
+            <p class="text-1">Long-term<strong>Durability</strong></p>
+                </div>
+      </div>  
+   </section> 
+  <!--==============================footer=================================-->
+    <footer>For more imformation: <a href="http://www.ic.polyu.edu.hk/"target="_blank">IC PolyU</a>
+    </footer>	
+</div> 
+
+</body>
+</html>
